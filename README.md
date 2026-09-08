@@ -40,7 +40,7 @@ Answered specific analytical queries using advanced Pandas method chaining (`que
 * `Pandas_EDA_Roller_Coasters.ipynb`: The main Jupyter Notebook containing all clean code cells and outputs.
 * `coaster_db.csv`: The underlying dataset used for the pipeline.
 
-## 🛠️ How to Run
+## How to Run
 
 1. Clone the repository to your local machine.
 2. Open the Jupyter Notebook file in your preferred environment (Jupyter Lab, VS Code, or Google Colab).
