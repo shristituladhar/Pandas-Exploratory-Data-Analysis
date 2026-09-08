@@ -13,7 +13,8 @@ An end-to-end Exploratory Data Analysis (EDA) project built using **Python, Pand
 
 ### 1. Data Cleaning & Preparation
 
-* Dropped duplicate records using subset matching (`Coaster_Name`, `Location`, `Opening_Date`) combined with bitwise negation (`~df.duplicated()`).
+* Recovered and maximized height data by implementing fallback logic between `height_value` and `height_ft` to preserve sample size.
+* Dropped duplicate records using robust subset matching (`Coaster_Name`, `Location`) to prevent missing `Opening_Date` (`NaT`) values from bypassing deduplication, combined with bitwise negation (`~df.duplicated()`).
 * Reset DataFrame indices cleanly using `.reset_index(drop=True)` to remove row gaps and discard old index artifacts.
 * Checked missing values across all columns using `.isna().sum()`.
 
